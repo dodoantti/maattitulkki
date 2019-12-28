@@ -1,0 +1,16 @@
+MaattiTulkki is a software made to run a 2 relay board with Arduino which is
+connected to a computer running MaattiWare http://maattiware.sourceforge.net/
+via parallel port.
+
+Original hardware implementation specified in MaattiWare is fine for running
+low voltage vending machines, but in this usecase relays had to be connected
+to 230V logic (relays and mains current), so relay board with optical isolation 
+was needed.
+
+Hardware used is Arduino Nano clone and cheap chinese 2 relay board.
+Relay board wouldn't work with serial signal, so arduino is used to
+run the relay board according to signals from MaattiWare.
+
+GNU GPLv3
+
+Code by Antti Kallunki, 2018 
